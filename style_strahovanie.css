@@ -1,0 +1,1133 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.woff') format('woff'), url('/fonts/Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.woff') format('woff'), url('/fonts/Montserrat-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('fonts/IBMPlexSans-Medium.woff') format('woff'), url('/fonts/IBMPlexSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff') format('woff'), url('/fonts/IBMPlexSans-Medium.woff2') format('woff2');
+    font-weight: 400;
+}
+
+.i-title {
+    font: 700 40px 'Montserrat', sans-serif;
+    letter-spacing: -0.17px;
+    line-height: 54px;
+    color: #121212;
+}
+
+.i-subtitle {
+    font-family: 'Vollkorn';
+    font-size: 31px;
+    letter-spacing: 0.59px;
+    margin-bottom: 25px;
+}
+
+.i-title-descr {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    color: #121212;
+}
+
+drop-down {
+    display: none;
+}
+
+.arrow {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 47%;
+    width: 25px;
+    height: 25px;
+}
+
+.arrow span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(0deg);
+    transition: transform 0.2s, opacity 0.1s ease 0.1s;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transition: transform 0.2s, opacity 0.1s ease 0.1s;
+}
+
+.arrow span:nth-child(1) {
+    transform: rotate(90deg);
+    position: relative;
+    top: 2px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.active .arrow span:nth-child(2) {
+    opacity: 0;
+    transform: rotate(90deg) translate(-1.5px, 0px);
+    -ms-transform: rotate(90deg) translate(-1.5px, 0px);
+    -webkit-transform: rotate(90deg) translate(-1.5px, 0px);
+}
+
+.active .arrow span {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.l-clear::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.insurance {
+    padding: 0 0 115px 0;
+}
+
+.insurance-content {
+    padding-bottom: 120px;
+}
+
+.insurance-about,
+.insurance-callback {
+    border: 1px solid #D9D9D9
+}
+
+.insurance-about {
+    width: 36.5%;
+    float: left;
+    padding: 5.88% 12% 6% 10.4%;
+}
+
+.insurance-about p:nth-child(2) {
+    color: #121212;
+    text-align: left;
+    letter-spacing: -0.11px;
+    font: 600 25px 'Montserrat';
+    margin-bottom: 55px;
+    line-height: 40px;
+}
+
+.insurance-about p:last-of-type {
+    margin-bottom: 80px;
+    opacity: 0.75;
+}
+
+.insurance-about button {
+    font: 500 14px 'Montserrat';
+    color: #942023;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.insurance-about p {
+    font: 400 16px 'IBM Plex Sans';
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: #000000
+}
+
+.insurance-callback {
+    width: 26.4%;
+    float: left;
+    padding: 5.8% 0 6.89% 9.6%;
+    margin-left: 4.8%;
+    color: #121212;
+}
+
+.f-link {
+    font: 400 16px 'IBM Plex Sans';
+    color: #942023;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.insurance-callback p:first-child {
+    margin-bottom: 49px;
+}
+
+.insurance-callback p:not(:first-child) {
+    margin: 25px 0 30px 0;
+    color: #404040;
+    letter-spacing: -0.5px;
+}
+
+.callback-text {
+    display: block;
+    font: 700 25px 'Montserrat';
+    line-height: 40px;
+    margin-bottom: 34px;
+    letter-spacing: -0.11px;
+}
+
+.callback-tel {
+    display: block;
+    letter-spacing: 0.9px;
+    font: 700 26px 'Montserrat';
+}
+
+.callback-tel a,
+.callback-tel span {
+    color: #121212;
+}
+
+.callback-tel-btn {
+    padding: 14px 27px 11px 27px;
+}
+
+.callback-tel-icon {
+    background-image: url('img/icons/phone.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+    padding-left: 35px;
+}
+
+.callback-tel-descr button:hover {
+    border: none;
+}
+
+.choose-prog .callback-tel-descr:hover {
+    border: none;
+}
+
+.insurance-banner {
+    font: 700 26px 'Montserrat';
+    min-height: 490px;
+    position: relative;
+    background-image: url('img/Bitmap/bitmap.png');
+    color: #FFFFFF;
+    text-align: left;
+    letter-spacing: -0.21px;
+}
+
+.insurance-banner p {
+    position: absolute;
+    bottom: 8%;
+    left: 23%;
+}
+
+.insurance-banner-text-mob span:last-child {
+    color: #942023;
+}
+
+.insurance-banner-text-mob span:first-child {
+    display: block;
+}
+
+.partners-sec {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.container.l-col-3>.partners.item {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.container>.partners.item {
+    margin-bottom: 70px;
+}
+
+.partners-button-container {
+    padding-left: 150px;
+}
+
+.partners-accordion-content {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .2s, opacity .3s;
+    background-color: #F4F4F4;
+    padding: 85px 155px 60px 175px;
+    display: none;
+    position: relative;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -webkit-transition: transform .2s, opacity .3s;
+}
+
+.partners-accordion-content.active {
+    display: inline-block;
+    margin-bottom: 62px;
+    height: auto;
+    transition: all 0.55s ease-out 0s;
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+    -ms-transform: translateY(0px) scale(1);
+    -webkit-transform: translateY(0px) scale(1);
+    -webkit-transition: all 0.55s ease-out 0s;
+}
+
+.partners-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+.partners-btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: -74px;
+    left: 135px;
+    border: 40px solid transparent;
+    border-bottom: 40px solid #f4f4f4;
+    display: none;
+}
+
+.partners-btn.active::after {
+    display: block;
+}
+
+.partners-btn.active .partners-button-name {
+    color: #A32728;
+}
+
+.partners-button-container {
+    text-align: center;
+}
+
+.partners-accordion-content.text p {
+    margin-top: 45px;
+}
+
+.partners-content {
+    padding-top: 120px;
+}
+
+.partners-name {
+    font: 600 13px 'IBM Plex Sans';
+    letter-spacing: 1.4px;
+    color: #121212;
+    text-transform: uppercase;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    border-bottom: 1px dashed #A32728;
+    display: inline;
+}
+
+.partners-img {
+    height: 120px;
+}
+
+.partners-name:hover {
+    color: #A32728;
+}
+
+.partners-descr-btn span {
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    background-color: #404040;
+}
+
+.soglasie-item {
+    margin-top: 25px;
+    padding-left: 181px;
+}
+
+.ugoria-item {
+    margin-top: 25px;
+    padding-left: 19px;
+}
+
+.partners-descr-btn span:last-of-type {
+    transform: rotate(90deg) translate(-24px, 0px);
+}
+
+.partners-descr-btn-close {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 34px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.partners-descr-btn-open {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    cursor: pointer;
+}
+
+.partners-j-dd-button {
+    position: relative;
+    border-bottom: 0.8px dashed rgba(18, 18, 18, 0.4);
+    padding: 29px 0 29px 0;
+    margin: 0 40px 0 40px;
+}
+
+drop-down.active .partners-j-dd-button {
+    border: none;
+}
+
+.partners-j-dd-button img {
+    width: 33%;
+}
+
+.partners-j-dd-button-reso>img,
+.partners-j-dd-button-sogl img {
+    width: 32%;
+}
+
+.partners-drop-content {
+    background-color: #F9F9F9;
+    display: none;
+    padding: 42px 40px 20px 39px;
+    position: relative;
+    line-height: 24px;
+}
+
+.partners-drop-content p:first-child {
+    margin-bottom: 44px;
+}
+
+.partners-drop-content>p>span,
+.partners-accordion-content>p>span {
+    font-weight: 500;
+    display: inline;
+}
+
+.partners-drop-content:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #F9F9F9;
+    border: 40px solid transparent;
+    border-top: 40px solid #FFF;
+    top: 0;
+    right: 60px;
+}
+
+.accordion-content-wrapper {
+    max-width: 465px;
+    margin: 0 auto;
+}
+
+.ugoria {
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.reso {
+    position: relative;
+    top: 5px;
+    left: 2px;
+}
+
+.opportunities {
+    padding: 0;
+}
+
+.opportunities-item {
+    padding: 34px 10px 14px 15px;
+    background-color: #F9F9F9;
+}
+
+.carousel .item {
+    margin: 0;
+}
+
+.seo-list-opportunities {
+    padding-top: 62px;
+    column-count: 2;
+}
+
+.seo-list-opportunities li {
+    width: 84%;
+    padding-bottom: 8px;
+}
+
+.seo-list-opportunities li span {
+    display: block;
+    padding: 1px 0;
+}
+
+.seo-list-protection {
+    column-count: 2;
+    padding-top: 90px;
+    column-gap: 13%;
+    padding-bottom: 95px;
+}
+
+.seo-list-protection li:not(:nth-child(5)) {
+    padding-bottom: 9px;
+}
+
+.owl-stage {
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.25s ease 0s;
+    width: 1500px;
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: all 0.25s ease 0s;
+}
+
+.owl-stage {
+    transform: translate3d(-250px, 0px, 0px);
+    -ms-transform: translate3d(-250px, 0px, 0px);
+    -webkit-transform: translate3d(-250px, 0px, 0px);
+}
+
+.opportunities-carousel.owl-item,
+.owl-item.active {
+    width: 250px !important;
+    margin-right: 15px !important;
+}
+
+.carousel-container .owl-stage {
+    padding-top: 15px;
+    position: relative;
+}
+
+.carousel-container .owl-stage-outer {
+    padding-bottom: 0;
+}
+
+.carousel-container {
+    margin: 0;
+}
+
+.descr {
+    color: #000000;
+    opacity: 0.75;
+}
+
+.protect {
+    padding: 200px 0 0 0;
+    background-color: #F9F9F9;
+}
+
+.protect-wrapper {
+    background-image: url('img/background/back1.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right 80px;
+}
+
+.protect-list {
+    padding: 90px 0 135px 70px;
+}
+
+.protect-details {
+    padding-bottom: 150px;
+    padding-left: 5px;
+}
+
+.protect-details p strong {
+    display: block;
+}
+
+.protect-logo {
+    width: 62px;
+    height: 61px;
+    float: left;
+    background-image: url('img/icons/protect-logo.svg');
+}
+
+.protect-aplic {
+    margin: 0px 4.7%;
+}
+
+.protect-aplic,
+.protect-more {
+    margin-top: 15px;
+}
+
+.protect-more {
+    font: 600 14px 'Montserrat';
+    letter-spacing: 0.5px;
+    color: #942023;
+    text-transform: uppercase;
+    line-height: 25px;
+    float: left;
+    margin-left: 60px;
+}
+
+.why-insurance {
+    padding-top: 135px;
+    padding-bottom: 140px;
+}
+
+.why-insurance img {
+    width: 48.4%;
+}
+
+.why-insurance img:first-of-type {
+    margin-right: 2.5%;
+}
+
+.why-insurance-sub {
+    margin-top: 105px;
+    margin-bottom: 40px;
+}
+
+.why-insurance-descr {
+    margin-bottom: 30px;
+}
+
+.why-insurance-descr:last-of-type {
+    margin-bottom: 130px;
+}
+
+.why-insurance-ex p {
+    font: 500 16px 'IBM Plex Sans';
+    width: 65%;
+    text-align: center;
+    color: #942023;
+    letter-spacing: 1px;
+    line-height: 27.2px;
+    margin: 0 auto;
+}
+
+.why-insurance-ex {
+    background-color: #F9F9F9;
+    padding: 32px 0 22px 0;
+}
+
+.prog-btn button {
+    color: #121212;
+    background-color: #FFFFFF;
+    border: 1px solid #942023;
+    font-weight: 600;
+    padding: 13px 43px 13px;
+}
+
+.prog-aplic-block {
+    width: 70%;
+    padding-top: 85px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.insurance-now-find:hover {
+    border-bottom: none;
+}
+
+.popup .form-wrapper {
+    min-height: 320px;
+}
+
+@media screen and (max-width: 1400px) {
+    .insurance-about {
+        width: 51.5%;
+        padding: 6.3% 2% 6% 3%;
+        max-height: 370px;
+    }
+
+    .insurance-callback {
+        width: 33.4%;
+        padding: 7.8% 2% 3.5% 3.6%;
+        margin-left: 3.8%;
+        max-height: 380px;
+    }
+
+    .insurance-banner p {
+        bottom: 2%;
+        left: 6%;
+    }
+
+    .partners-button-container {
+        padding-left: 40px;
+    }
+
+    .partners-img img {
+        width: 90%;
+    }
+
+    .soglasie-item,
+    .ugoria-item {
+        padding-left: 0;
+    }
+
+    .container.l-col-3>.item {
+        width: calc(35.3% - 40px);
+    }
+
+    .protect {
+        padding: 100px 0 0 0;
+    }
+
+    .prog-aplic-block {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .i-title {
+        font: 700 30px 'Montserrat', sans-serif;
+    }
+
+    .insurance-callback,
+    .partners-descr-btn-close,
+    .partners-btn.active::after,
+    .partners-name,
+    .protect-details,
+    accordeon-component {
+        display: none;
+    }
+
+    .f-link-mobile,
+    .partners-descr-btn-open,
+    drop-down {
+        display: block;
+    }
+
+    .insurance-content {
+        padding-bottom: 10px;
+    }
+
+    .insurance-about {
+        width: unset;
+        border: none;
+        padding: 0;
+        max-height: unset;
+    }
+
+    .insurance-about p {
+        margin-bottom: 34px;
+    }
+
+    .insurance-about p:nth-child(2) {
+        font: 300 24px 'Montserrat';
+        margin-bottom: 45px;
+    }
+
+    .insurance-about button {
+        font: 500 13px 'IBM Plex Sans';
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-bottom: 75px;
+        position: relative;
+    }
+
+    .insurance-about button:after {
+        content: '';
+        position: absolute;
+        left: 333px;
+        top: 6.4px;
+        width: 6px;
+        height: 1px;
+        background: #942023;
+        transform: rotate(45deg);
+    }
+
+    .insurance-about button:before {
+        content: '';
+        position: absolute;
+        left: 333px;
+        top: 10.4px;
+        width: 6px;
+        height: 1px;
+        background: #942023;
+        transform: rotate(135deg);
+    }
+
+    .callback-tel-icon {
+        background-position: 6px 7px;
+        padding-left: 35px;
+    }
+
+    .insurance-about .callback-tel-descr {
+        margin: 10px 0 40px 32px;
+    }
+
+    .callback-tel {
+        display: block;
+        font: 600 25px 'IBM Plex Sans';
+        letter-spacing: -0.45px;
+    }
+
+    .tel {
+        letter-spacing: -0.65px;
+    }
+
+    .partners-content {
+        padding-top: 25px;
+    }
+
+    .partners-sec {
+        padding-bottom: 60px;
+    }
+
+    .partners-drop-content:after {
+        border: 20px solid transparent;
+        border-top: 20px solid #FFF;
+    }
+
+    .seo-list-opportunities,
+    .seo-list-protection {
+        column-count: 1;
+    }
+
+    .prog-aplic-block {
+        text-align: center;
+    }
+
+    .why-insurance {
+        padding: 84px 0;
+    }
+
+    .why-insurance .no-border-wrapper {
+        background-color: #FFF;
+        width: 103%;
+    }
+
+    .why-insurance-descr:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .why-insurance-ex {
+        padding: 34px 7px 34px 16px;
+    }
+
+    .why-insurance-ex p {
+        width: unset;
+        text-align: start;
+    }
+
+    .why-insurance img {
+        width: 48.7%;
+    }
+
+    .why-insurance img:first-of-type {
+        margin: 0
+    }
+
+    .opportunities .no-border-wrapper {
+        width: calc(100% - 80px);
+    }
+
+    .no-border-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .btn {
+        display: none;
+    }
+
+    .insurance-banner p,
+    .text .seo-list-opportunities>li:before {
+        display: none;
+    }
+
+    .arrow span {
+        width: 17px;
+    }
+
+    .banner-top-padding {
+        padding-bottom: 0;
+    }
+
+    .wrapper {
+        width: calc(100% - 24px);
+    }
+
+    .i-title {
+        font: 600 21px 'Montserrat', sans-serif;
+        letter-spacing: -0.26px;
+        line-height: 32px;
+    }
+
+    .i-subtitle {
+        font: 500 16px 'IBM Plex Sans';
+        text-transform: uppercase;
+        color: #942023;
+        letter-spacing: 0;
+        margin-bottom: 35px;
+    }
+
+    .i-title-descr {
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.2px;
+        padding: 22px 0 25px 0;
+        margin-bottom: 0;
+    }
+
+    .insurance {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .insurance-banner {
+        min-height: unset;
+        background-image: none;
+    }
+
+    .insurance-banner-pic {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .insurance-banner-logo-pic {
+        display: block;
+        width: 21%;
+        position: absolute;
+        right: 26px;
+        bottom: 160px;
+    }
+
+    .insurance-banner-text-mob {
+        display: block;
+        font: 500 17px 'Montserrat';
+        padding: 25px 30px;
+        line-height: 29px;
+        letter-spacing: -0.21px;
+        margin: 0;
+    }
+
+    .insurance-about p:last-of-type {
+        margin: 15px 0 33px 0;
+    }
+
+    .insurance-about button:after {
+        left: 98px;
+        top: 23.4px;
+    }
+
+    .insurance-about button:before {
+        left: 98px;
+        top: 27.4px;
+    }
+
+    .insurance-about button span {
+        display: block;
+        text-align: start;
+    }
+
+    .active .arrow span {
+        background-color: #888888;
+    }
+
+    .partners {
+        padding-top: 20px;
+    }
+
+    .partners-drop-content:after {
+        right: 20px;
+    }
+
+    .partners-j-dd-button {
+        margin: 0 15px;
+    }
+
+    .partners-j-dd-button:last-child {
+        margin-bottom: 0;
+    }
+
+    .partners-j-dd-button img {
+        width: 42.5%;
+    }
+
+    .partners-j-dd-button-reso>img {
+        width: 35%;
+    }
+
+    .partners-j-dd-button-sogl img {
+        width: 50%;
+    }
+
+    .partners-j-dd-button-ug img {
+        width: 46%;
+    }
+
+    .partners-j-dd-button-ing {
+        padding: 22px 0 19px 0;
+    }
+
+    .partners-j-dd-button-ing>.arrow {
+        top: 55%;
+    }
+
+    .partners-j-dd-button-reso {
+        padding: 26px 0 23px 0;
+    }
+
+    .partners-j-dd-button-reso>.arrow,
+    .partners-j-dd-button-ug>.arrow {
+        top: 44%;
+    }
+
+    .partners-j-dd-button-sogl {
+        padding: 33px 0 15px 0;
+    }
+
+    .partners-j-dd-button-sogl>.arrow {
+        top: 51%;
+    }
+
+    .partners-j-dd-button-ug {
+        padding: 30px 0 15px 0;
+    }
+
+    .partners-drop-content {
+        font-size: 13px;
+    }
+
+    .partners-button-container {
+        padding: 0;
+    }
+
+    .partners-img img {
+        display: block;
+        width: 45%;
+        padding-top: 11px;
+    }
+
+    .partners.item {
+        margin: 0;
+    }
+
+    .partners-accordion-content.active:after {
+        border: 20px solid transparent;
+        border-top: 20px solid #FFFf;
+    }
+
+    .partners-accordion-content.active {
+        margin-bottom: 0;
+    }
+
+    .text ul li,
+    .text ol li {
+        margin-left: 40px;
+    }
+
+    .protect {
+        background-color: #FFFFFF;
+        padding: 40px 0 0 0;
+    }
+
+    .no-border-wrapper {
+        background-color: #F9F9F9;
+    }
+
+    .no-border-wrapper {
+        width: 100%
+    }
+
+    .opportunities .no-border-wrapper {
+        width: 100%;
+    }
+
+    .opportunities.i-subtitle {
+        font-size: 40px;
+    }
+
+    .opportunities-descr {
+        letter-spacing: 0.09px;
+        opacity: 0.7;
+    }
+
+    .opportunities-carousel.carousel {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .opportunities p {
+        font-size: 13px;
+        color: #121212;
+        margin: 0;
+    }
+
+    .opportunities>.wrapper>.i-subtitle {
+        font: 500 16px 'IBM Plex Sans';
+        line-height: 24px;
+    }
+
+    .opportunities-item {
+        padding: 34px 10px 0 15px;
+        height: 140px;
+    }
+
+    .seo-list-protection {
+        padding: 45px 0 0 0;
+    }
+
+    .seo-list-protection li div {
+        display: inline;
+    }
+
+    .seo-list-opportunities {
+        display: none;
+    }
+
+    .why-insurance .wrapper:not(.no-border-wrapper) {
+        width: calc(100% - 36px);
+    }
+
+    .why-insurance-sub {
+        font: 400 13px 'IBM Plex Sans';
+        margin: 0 0 32px 0;
+        text-transform: none;
+        color: #121212;
+        width: 95%;
+    }
+
+    .why-insurance img {
+        width: 49.4%;
+    }
+
+    .why-insurance-descr {
+        margin-bottom: 25px;
+        opacity: 0.75;
+        color: #121212;
+    }
+
+    .why-insurance-ex p {
+        font: 500 13px 'IBM Plex Sans';
+        color: #121212;
+        letter-spacing: 0;
+        line-height: 18px;
+        opacity: 0.77;
+    }
+
+    .prog-aplic-block {
+        padding-top: 54px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .partners-img {
+        height: 80px;
+    }
+
+    .why-insurance {
+        padding: 42px 0;
+    }
+
+    .why-insurance img {
+        min-width: 158px;
+        min-height: 114px;
+    }
+
+    .why-insurance>.no-border-wrapper {
+        text-align: center;
+    }
+}
